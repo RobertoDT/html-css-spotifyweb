@@ -8,6 +8,11 @@ body{
   font-family: 'Montserrat', sans-serif;
 }
 
+h2{
+  color: white;
+  margin: 30px 0;
+}
+
 h3{
   font-size: 16px;
 }
@@ -18,8 +23,16 @@ hr{
 }
 
 .btn{
+  text-decoration: none;
+  color: grey;
+  border: 1px solid grey;
+  border-radius: 50px;
+  padding: 10px 40px;
+  font-size: 13px;
+}
+.btn:hover{
   color: white;
-  background-color: purple;
+  border-color: white;
 }
 
 .page-wrapper{
@@ -43,6 +56,9 @@ hr{
 }
 .p-left20{
   padding-left: 20px;
+}
+.f-s-x{
+  font-size: 13px;
 }
 
 /*MAIN*/
@@ -165,7 +181,7 @@ main{
 /*Main content*/
 .main-content{
   padding: 80px 20px 0 20px;
-  background-color: yellow;
+  background-color: #031524;
   height: 100%;
   width: calc(100% - 300px);
   overflow-y: auto; /*per far scrollare solo la parte del main content*/
@@ -187,12 +203,23 @@ main{
   list-style-type: none;
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 .lista-generi li{
-  margin-right: 10px;
+  margin-right: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.spec{
+  border-top: 2px solid lightgreen;
+  margin: 3px 30px;
+  border-color: lightgreen;
 }
 .lista-generi a{
   text-decoration: none;
+}
+.lista-generi a:hover{
+  color: white;
 }
 .box-wrapper{
   display: flex;
