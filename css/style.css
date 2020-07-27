@@ -1,0 +1,140 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.btn{
+  color: white;
+  background-color: purple;
+}
+
+.page-wrapper{
+  height: 100vh;
+  background-color: black;
+}
+
+/*MAIN*/
+main{
+  height: calc(100% - 80px);
+  display: flex;
+}
+
+.barra-laterale{
+  width: 300px;
+  height: 100%;
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo{
+  background-color: blue;
+}
+.main-nav{
+  background-color: orange;
+}
+.secondary-nav{
+  background-color: lightblue;
+  height: 100%;
+  overflow-y: auto;
+}
+.playlist-list{
+  height: 80%;
+  overflow-y: auto;
+}
+
+.aside-bottom{
+  height: 80px;
+  flex-shrink: 0; /*l'elemento non può restringersi*/
+  background-color: grey;
+  margin-top: auto; /*trick da usare con display flex per allineare in fondo il contenuto*/
+}
+
+/*Main content*/
+.main-content{
+  padding: 80px 20px 0 20px;
+  background-color: yellow;
+  height: 100%;
+  width: calc(100% - 300px);
+  overflow-y: auto; /*per far scrollare solo la parte del main content*/
+}
+.upgrade{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  height: 80px;
+  width: calc(100% - 300px);
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.lista-generi{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+.lista-generi li{
+  margin-right: 10px;
+}
+.lista-generi a{
+  text-decoration: none;
+}
+.box-wrapper{
+  display: flex;
+}
+.box{
+  width: 200px;
+  height: 200px;
+  background-color: lightblue;
+  margin: 10px;
+}
+
+/*FOOTER*/
+footer{
+  background-color: red;
+  height: 80px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+}
+.footer-left,
+.player,
+.footer-right{
+  width: calc(100% / 3);
+  height: 100%;
+}
+.footer-left{
+  background-color: white;
+  display: flex;
+}
+.player{
+  background-color: blue;
+}
+.footer-right{
+  background-color: green;
+}
+.player-bottom{
+  display: flex;
+  align-items: center;
+}
+.barra-player{
+  width: 500px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: grey;
+}
+.footer-right{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.barra-volume{
+  width: 100px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: grey;
+}
