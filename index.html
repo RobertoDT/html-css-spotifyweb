@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify</title>
   </head>
@@ -15,51 +16,68 @@
         <!-- barra laterale -->
         <aside class="barra-laterale">
           <!-- logo -->
-          <div class="logo">Spotify</div>
+          <div class="logo white">
+            <i class="fab fa-spotify"></i>
+            <h2>Spotify <span class="marchio">&reg;</span></h2>
+          </div>
           <!-- /logo -->
 
           <!-- sezione nav principale -->
           <nav class="main-nav">
-            <ul>
-              <li>link</li>
-              <li>link</li>
-              <li>link</li>
+            <ul class="main-nav-list">
+              <li>
+                <a class="grey" href="#">
+                  <i class="fas fa-home"></i>
+                  Home
+                </a>
+              </li>
+              <li class="p-left20">
+                <a class="grey" href="#">
+                  <i class="fas fa-search"></i>
+                  Cerca
+                </a>
+              </li>
+              <li class="p-left20">
+                <a class="grey" href="#">
+                  <i class="fas fa-book-open"></i>
+                  La tua libreria
+                </a>
+              </li>
             </ul>
           </nav>
           <!-- /sezione nav principale -->
 
           <!-- playlist -->
-          <nav class="secondary-nav">
-            <h3>Playlist</h3>
-            <a href="#">CREA PLAYLIST</a>
+          <nav class="secondary-nav p-left20">
+            <h3 class="white">PLAYLIST</h3>
+            <div class="crea-playlist">
+              <div class="box-plus">
+                +
+              </div>
+              <a class="grey" href="#">Crea Playlist</a>
+            </div>
             <ul class="playlist-list">
-              <li><a href="#">crea playlist</a></li>
-              <li><a href="#">crea playlist</a></li>
-              <li><a href="#">crea playlist</a></li>
-              <li><a href="#">crea playlist</a></li>
-              <li><a href="#">crea playlist</a></li>
-              <li><a href="#">crea playlist</a></li>
-              <li><a href="#">crea playlist</a></li>
-              <li><a href="#">crea playlist</a></li>
-              <li><a href="#">crea playlist</a></li>
-              <li><a href="#">crea playlist</a></li>
-              <li><a href="#">crea playlist</a></li>
-              <li><a href="#">crea playlist</a></li>
-              <li><a href="#">crea playlist</a></li>
-              <li><a href="#">crea playlist</a></li>
-              <li><a href="#">crea playlist</a></li>
-              <li><a href="#">crea playlist</a></li>
-              <li><a href="#">crea playlist</a></li>
-              <li><a href="#">crea playlist</a></li>
+              <li><a class="grey" href="#">Nome Playlist</a></li>
+              <li><a class="grey" href="#">Nome Playlist</a></li>
+              <li><a class="grey" href="#">Nome Playlist</a></li>
+              <li><a class="grey" href="#">Nome Playlist</a></li>
+              <li><a class="grey" href="#">Nome Playlist</a></li>
+              <li><a class="grey" href="#">Nome Playlist</a></li>
+              <li><a class="grey" href="#">Nome Playlist</a></li>
+              <li><a class="grey" href="#">Nome Playlist</a></li>
             </ul>
           </nav>
           <!-- /playlist -->
 
           <!-- account logged -->
-          <div class="aside-bottom">
-            <a href="#">installa app</a>
+          <div class="aside-bottom p-left20">
+            <i class="fas fa-arrow-circle-down white"></i>
+            <a class="install grey" href="#">Installa app</a>
             <hr>
-            <h3>john Doe</h3>
+            <div class="account white">
+              <i class="fas fa-user-circle"></i>
+              <h3>John Doe</h3>
+            </div>
           </div>
           <!-- /account logged -->
 
