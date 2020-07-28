@@ -57,8 +57,17 @@ hr{
 .p-left20{
   padding-left: 20px;
 }
+.f-s-10{
+  font-size: 10px;
+}
 .f-s-13{
   font-size: 13px;
+}
+.f-s-30{
+  font-size: 30px;
+}
+.f-s-20{
+  font-size: 20px;
 }
 .text-center{
   text-align: center;
@@ -289,27 +298,50 @@ main{
 
 /*FOOTER*/
 footer{
-  background-color: red;
   height: 80px;
   position: relative;
   z-index: 1;
   display: flex;
+  justify-content: space-between;
+  background-color: #262626;
 }
 .footer-left,
 .player,
 .footer-right{
-  width: calc(100% / 3);
+
   height: 100%;
 }
 .footer-left{
-  background-color: pink;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sinister{
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+}
+.brano-testo{
+  margin: 0 20px;
+}
+.fa-heart{
+  margin: 0 15px;
 }
 .player{
-  background-color: blue;
+  display: flex;
+  flex-direction: column;
 }
-.footer-right{
-  background-color: green;
+.player-top{
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+  align-items: center;
+}
+.player-top i{
+  margin: 0 20px;
+}
+.play-logo:hover .fa-play-circle{
+  font-size: 35px;
 }
 .player-bottom{
   display: flex;
@@ -320,15 +352,46 @@ footer{
   height: 5px;
   border-radius: 5px;
   background-color: grey;
+  margin: 0 30px;
+}
+.barretta{
+  width: 20%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: lightgreen;
+  display: none;
+  position: relative;
+}
+.pallino{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  top: -8px;
+}
+.barra-player:hover .barretta{
+  display: block;
 }
 .footer-right{
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
+.footer-right i{
+  margin: 0 20px;
+}
 .barra-volume{
   width: 100px;
   height: 5px;
   border-radius: 5px;
   background-color: grey;
+  margin-right: 10px;
+}
+.barretta-volume{
+  width: 20%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: white;
 }
