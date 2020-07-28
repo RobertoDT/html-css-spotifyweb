@@ -10,7 +10,7 @@ body{
 
 h2{
   color: white;
-  margin: 30px 0;
+  margin: 20px 0;
 }
 
 h3{
@@ -57,8 +57,14 @@ hr{
 .p-left20{
   padding-left: 20px;
 }
-.f-s-x{
+.f-s-13{
   font-size: 13px;
+}
+.text-center{
+  text-align: center;
+}
+.m-bot20{
+  margin-bottom: 20px;
 }
 
 /*MAIN*/
@@ -109,11 +115,15 @@ main{
   font-size: 25px;
 }
 
+.secondary-nav-top{
+  height: 70px;
+}
+
 .secondary-nav{
   background-color: black;
   margin-top: 15px;
   height: 100%;
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 .crea-playlist{
   display: flex;
@@ -141,7 +151,7 @@ main{
   background-color: white;
 }
 .playlist-list{
-  height: 80%;
+  height: calc(100% - 70px);
   overflow-y: auto;
 }
 .playlist-list li{
@@ -225,10 +235,55 @@ main{
   display: flex;
 }
 .box{
-  width: 200px;
-  height: 200px;
-  background-color: lightblue;
-  margin: 10px;
+  padding: 10px;
+  width: calc(100% / 6);
+  position: relative;
+}
+.circle{
+  border-radius: 50%;
+}
+.box img{
+  width: 100%;
+}
+.box p{
+  font-size: 13px;
+}
+.play-icon{
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.layover{
+  position: relative;
+  width: calc(100% - 20px);
+  height: calc(100% - 98px);
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+  display: none;
+}
+.box:hover .layover{
+  display: block;
+  cursor: pointer;
+}
+.layover-2{
+  position: relative;
+  width: calc(100% - 20px);
+  height: calc(100% - 43px);
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+  display: none;
+}
+.box:hover .layover-2{
+  display: block;
+  cursor: pointer;
 }
 
 /*FOOTER*/
