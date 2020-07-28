@@ -179,6 +179,7 @@ main{
   flex-shrink: 0; /*l'elemento non può restringersi*/
   background-color: black;
   margin-top: auto; /*trick da usare con display flex per allineare in fondo il contenuto*/
+  padding-left: 20px;
 }
 .aside-bottom a:hover{
   color: white;
@@ -425,7 +426,7 @@ footer{
 
 /*RESPONSIVE*/
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 1200px){
   .box{
     width: 25%;
   }
@@ -434,7 +435,7 @@ footer{
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 992px){
   .box{
     width: 50%;
   }
@@ -456,5 +457,48 @@ footer{
   }
   .barra-player{
     margin: 0 10px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .barra-laterale{
+    width: 70px;
+  }
+  .logo h2{
+    display: none;
+  }
+  .logo i{
+    font-size: 30px;
+  }
+  .iconcine{
+    display: none;
+  }
+  .secondary-nav{
+    display: none;
+  }
+  .install{
+    display: none;
+  }
+  .ciaone{
+    display: none;
+  }
+  .john{
+    display: none;
+  }
+  .aside-bottom{
+    padding-left: 0;
+    text-align: center;
+  }
+  .fa-arrow-circle-down{
+    font-size: 12px;
+  }
+  .upgrade{
+    width: calc(100% - 70px);
+  }
+  .main-content{
+    width: calc(100% - 70px);
+  }
+  .fa-user-circle{
+    padding-left: 20px;
   }
 }
