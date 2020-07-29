@@ -470,18 +470,10 @@ footer{
   .logo i{
     font-size: 30px;
   }
-  .iconcine{
-    display: none;
-  }
-  .secondary-nav{
-    display: none;
-  }
-  .install{
-    display: none;
-  }
-  .ciaone{
-    display: none;
-  }
+  .iconcine,
+  .secondary-nav,
+  .install,
+  .ciaone,
   .john{
     display: none;
   }
