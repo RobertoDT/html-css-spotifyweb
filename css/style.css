@@ -331,6 +331,7 @@ footer{
 .fa-heart{
   margin: 0 15px;
 }
+
 .player{
   display: flex;
   flex-direction: column;
@@ -353,7 +354,8 @@ footer{
   align-items: center;
 }
 .barra-player{
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
   height: 5px;
   border-radius: 5px;
   background-color: grey;
@@ -383,6 +385,7 @@ footer{
 .barra-player:hover .pallino{
   display: block;
 }
+
 .footer-right{
   display: flex;
   align-items: center;
@@ -392,7 +395,8 @@ footer{
   margin: 0 20px;
 }
 .barra-volume{
-  width: 100px;
+  max-width: 100px;
+  width: 100%;
   height: 5px;
   border-radius: 5px;
   background-color: grey;
@@ -426,6 +430,7 @@ footer{
 
 /*RESPONSIVE*/
 
+/*Medium Desktop*/
 @media screen and (max-width: 1200px){
   .box{
     width: 25%;
@@ -435,6 +440,7 @@ footer{
   }
 }
 
+/*Tablets*/
 @media screen and (max-width: 992px){
   .box{
     width: 50%;
@@ -460,6 +466,7 @@ footer{
   }
 }
 
+/*Smartphone*/
 @media screen and (max-width: 768px){
   .barra-laterale{
     width: 70px;
@@ -477,6 +484,9 @@ footer{
   .john{
     display: none;
   }
+  .player-top i{
+    margin: 0 12px;
+  }
   .aside-bottom{
     padding-left: 0;
     text-align: center;
@@ -492,5 +502,8 @@ footer{
   }
   .fa-user-circle{
     padding-left: 20px;
+  }
+  .footer-right i{
+    margin: 0 5px;
   }
 }
