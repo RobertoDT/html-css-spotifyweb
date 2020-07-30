@@ -29,10 +29,12 @@ hr{
   border-radius: 50px;
   padding: 10px 40px;
   font-size: 13px;
+  transition: font-size 0.6s;
 }
 .btn:hover{
   color: white;
   border-color: white;
+  font-size: 20px;
 }
 
 .page-wrapper{
@@ -112,6 +114,7 @@ main{
 }
 .main-nav-list a{
   text-decoration: none;
+  transition: color, font-size 0.3s;
 }
 .main-nav-list li:first-child{
   border-left: 3px solid lightgreen;
@@ -119,6 +122,7 @@ main{
 }
 .main-nav-list a:hover{
   color: white;
+  font-size: 20px;
 }
 .main-nav-list i{
   font-size: 25px;
@@ -238,9 +242,11 @@ main{
 }
 .lista-generi a{
   text-decoration: none;
+  transition: color, font-size 0.3s;
 }
 .lista-generi a:hover{
   color: white;
+  font-size: 20px;
 }
 .box-wrapper{
   display: flex;
@@ -274,7 +280,7 @@ main{
 .layover{
   width: 100%;
   height: calc(100% - 4px); /*4 px di differenza tra layover-container e img non so da dove escono fuori*/
-  background-color: rgba(0, 0, 0, 0.5);
+  transition: background 0.3s;
   position: absolute;
   top: 0;
   left: 0;
@@ -285,11 +291,15 @@ main{
   display: block;
   cursor: pointer;
 }
+.layover:hover{
+  background: rgba(0, 0, 0, 0.5);
+}
+
 .layover-circle{
   border-radius: 50%;
   width: 100%;
   height: calc(100% - 4px);
-  background-color: rgba(0, 0, 0, 0.5);
+  transition: background 0.3s;
   position: absolute;
   top: 0;
   left: 0;
@@ -299,6 +309,9 @@ main{
 .layover-container:hover .layover-circle{
   display: block;
   cursor: pointer;
+}
+.layover-circle:hover{
+  background: rgba(0, 0, 0, 0.5);
 }
 
 /*FOOTER*/
@@ -345,6 +358,9 @@ footer{
 .player-top i{
   margin: 0 20px;
 }
+.fa-play-circle{
+  transition: font-size 0.5s;
+}
 .play-logo:hover .fa-play-circle{
   font-size: 35px;
 }
@@ -375,7 +391,8 @@ footer{
   background-color: white;
   position: absolute;
   right: 0;
-  top: -4px;
+  top: 50%;
+  transform: translateY(-50%);
   display: none;
 }
 .barra-player:hover .barretta{
@@ -416,7 +433,8 @@ footer{
   background-color: white;
   position: absolute;
   right: 0;
-  top: -4px;
+  top: 50%;
+  transform: translateY(-50%);
   display: none;
 }
 .barra-volume:hover .barretta-volume{
