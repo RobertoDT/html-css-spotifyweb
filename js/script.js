@@ -13,3 +13,6 @@ document.getElementById('username').innerHTML = 'Roberto Del Toro';
 /*circle-box*/
 document.getElementById('lana').innerHTML = 'Lana Del Rey';
 document.getElementById('ennio').innerHTML = 'Ennio Morricone';
+
+
+alert('Ciao Eliiiii :D');
